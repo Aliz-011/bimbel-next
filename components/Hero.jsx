@@ -8,8 +8,8 @@ import {
 
 const Hero = () => {
   return (
-    <section className="flex flex-col justify-center items-center py-4 sm:py-0 px-4 sm:px-16 h-fit sm:h-[80vh]">
-      <div className="grid sm:grid-cols-2 px-2 sm:px-4 py-2.5 gap-16 sm:gap-8">
+    <section className="flex flex-col justify-center items-center py-4 md:py-8 px-4 md:px-16 h-fit md:h-[80vh]">
+      <div className="grid md:grid-cols-2 px-2 md:px-4 py-2.5 gap-16 md:gap-8">
         {/* left */}
         <motion.div
           initial={{ x: -400, opacity: 0 }}
@@ -19,39 +19,41 @@ const Hero = () => {
             transition: { duration: 0.5, ease: 'easeInOut' },
           }}
         >
-          <h2 className="text-5xl sm:text-6xl font-bold leading-tight sm:leading-snug dark:text-white">
+          <h2 className="text-5xl sm:text-6xl font-bold leading-tight sm:leading-snug">
             Study At Home With
             <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
               High Experience
             </span>{' '}
             Lecturer
           </h2>
-          <p className="text-gray-600 mt-4 mb-8 dark:text-gray-100">
+          <p className="text-gray-600 mt-4 mb-8">
             Simple & and straightforward teaching based on what really matter
             most.
           </p>
-          <motion.button
-            initial={{ y: 40, opacity: 0 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-              transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5 },
-            }}
-            className="btn-primary "
-          >
-            Get Started Now
-          </motion.button>
-          <motion.button
-            initial={{ y: 40, opacity: 0 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-              transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5 },
-            }}
-            className="btn-secondary ml-5"
-          >
-            View Courses
-          </motion.button>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <motion.button
+              initial={{ y: 40, opacity: 0 }}
+              animate={{
+                y: 0,
+                opacity: 1,
+                transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5 },
+              }}
+              className="btn-primary"
+            >
+              Get Started Now
+            </motion.button>
+            <motion.button
+              initial={{ y: 40, opacity: 0 }}
+              animate={{
+                y: 0,
+                opacity: 1,
+                transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5 },
+              }}
+              className="btn-secondary"
+            >
+              View Courses
+            </motion.button>
+          </div>
         </motion.div>
 
         {/* right */}
@@ -65,9 +67,9 @@ const Hero = () => {
           className="relative w-full max-w-full flex flex-col justify-center"
         >
           {/* balls */}
-          <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
-          <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-400 animation-delay-2000 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
-          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-red-400 animation-delay-4000 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
+          <div className="hidden md:block absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
+          <div className="hidden md:block absolute top-0 -right-4 w-72 h-72 bg-yellow-400 animation-delay-2000 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
+          <div className="hidden md:block absolute -bottom-8 left-20 w-72 h-72 bg-red-400 animation-delay-4000 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
 
           {/* why us */}
           <div className="relative flex flex-col gap-5">
