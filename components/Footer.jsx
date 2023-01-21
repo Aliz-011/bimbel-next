@@ -120,7 +120,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-span-full mt-12 text-sm text-gray-400 flex justify-between border-t pt-5">
+        <div className="col-span-full mt-12 text-sm text-gray-400 sm:flex flex-row space-y-4 sm:space-y-0 justify-between border-t pt-5">
           <p>
             © 2020-2023 domain.com - Home teaching Premium, Expert &
             Professional.

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import React from 'react';
 import {
   HiOutlineChatAlt2,
@@ -31,17 +32,19 @@ const Hero = () => {
             most.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <motion.button
-              initial={{ y: 40, opacity: 0 }}
-              animate={{
-                y: 0,
-                opacity: 1,
-                transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5 },
-              }}
-              className="btn-primary"
-            >
-              Get Started Now
-            </motion.button>
+            <Link href="/register">
+              <motion.button
+                initial={{ y: 40, opacity: 0 }}
+                animate={{
+                  y: 0,
+                  opacity: 1,
+                  transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5 },
+                }}
+                className="btn-primary w-full"
+              >
+                Get Started Now
+              </motion.button>
+            </Link>
             <motion.button
               initial={{ y: 40, opacity: 0 }}
               animate={{

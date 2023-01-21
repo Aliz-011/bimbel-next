@@ -97,14 +97,6 @@ export default function Header() {
                   Contact
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/register"
-                  className="btn-secondary text-center block sm:inline-flex"
-                >
-                  Sign up
-                </Link>
-              </li>
             </motion.ul>
           </div>
         </div>

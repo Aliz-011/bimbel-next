@@ -6,6 +6,7 @@ import { GrUserManager, GrCalendar } from 'react-icons/gr';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import BuyCourses from '../components/BuyCourses';
+import Team from '../components/Team';
 
 export default function Home() {
   return (
@@ -79,6 +80,7 @@ export default function Home() {
       </section>
       <About />
       <BuyCourses />
+      <Team dataPerPage={2} />
     </>
   );
 }
