@@ -32,7 +32,7 @@ const Hero = () => {
             most.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/register">
+            <a href="#contact">
               <motion.button
                 initial={{ y: 40, opacity: 0 }}
                 animate={{
@@ -44,7 +44,7 @@ const Hero = () => {
               >
                 Get Started Now
               </motion.button>
-            </Link>
+            </a>
             <motion.button
               initial={{ y: 40, opacity: 0 }}
               animate={{

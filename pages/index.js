@@ -7,8 +7,11 @@ import { HiOutlineLightBulb } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import BuyCourses from '../components/BuyCourses';
 import Team from '../components/Team';
+import FAQ from '../components/FAQ';
+import Subscribe from '../components/Subscribe';
+import { supabase } from '../supabase';
 
-export default function Home() {
+export default function Home({ kursus }) {
   return (
     <>
       <Head>
@@ -45,7 +48,7 @@ export default function Home() {
                 Benefits about Learning Expertise
               </h2>
             </div>
-            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5">
+            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5 border-l-4 border-green-400">
               <HiOutlineLightBulb className="w-12 h-12 text-black" />
               <div>
                 <h2 className="font-semibold text-xl">Online Courses</h2>
@@ -55,7 +58,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5">
+            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5 border-l-4 border-green-400">
               <GrUserManager className="w-10 h-10 text-black" />
               <div>
                 <h2 className="font-semibold text-xl">Learn With Expert</h2>
@@ -65,7 +68,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5">
+            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5 border-l-4 border-green-400">
               <GrCalendar className="w-10 h-10 text-black" />
               <div>
                 <h2 className="font-semibold text-xl">Earn a Certificate</h2>
@@ -79,8 +82,10 @@ export default function Home() {
         </motion.div>
       </section>
       <About />
-      <BuyCourses />
-      <Team dataPerPage={2} />
+      <BuyCourses kursus={kursus} />
+      <Team dataPerPage={3} />
+      <FAQ />
+      <Subscribe />
     </>
   );
 }
@@ -88,3 +93,19 @@ export default function Home() {
 Home.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
+
+export async function getStaticProps() {
+  let { data, error } = await supabase.from('kursus').select('*');
+
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      kursus: data,
+    },
+  };
+}
