@@ -16,6 +16,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           ></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap"
+            rel="stylesheet"
+          ></link>
         </Head>
         <body className="bg-gray-50">
           <Main />

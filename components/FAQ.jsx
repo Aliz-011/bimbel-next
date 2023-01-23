@@ -14,7 +14,7 @@ export default function FAQ() {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-sm px-4 py-2 text-left text-sm font-medium text-indigo-900 hover:bg-indigo-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75">
+              <Disclosure.Button className="flex w-full justify-between rounded-sm px-4 py-2 text-left text-sm font-medium text-indigo-900 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75">
                 <span>What is your refund policy?</span>
                 <HiChevronUp
                   className={`${
@@ -32,7 +32,7 @@ export default function FAQ() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-sm px-4 py-2 text-left text-sm font-medium text-indigo-900 hover:bg-indigo-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75">
+              <Disclosure.Button className="flex w-full justify-between rounded-sm px-4 py-2 text-left text-sm font-medium text-indigo-900 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75">
                 <span>Do you offer technical support?</span>
                 <HiChevronUp
                   className={`${

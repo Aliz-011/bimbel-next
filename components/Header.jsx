@@ -18,10 +18,10 @@ export default function Header() {
               transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5 },
             }}
             href="/"
-            className="flex items-center"
+            className="flex items-center justify-center relative"
           >
-            <span className="self-center text-xl font-semibold whitespace-nowrap ">
-              Logo
+            <span class="text-xl font-semibold whitespace-nowrap">
+              iLearnAcademy
             </span>
           </motion.a>
           <motion.button

@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
+      ptSerif: ['PT Serif', 'sans-serif'],
     },
     extend: {
       animation: {

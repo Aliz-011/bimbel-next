@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import React from 'react';
 import {
   HiOutlineChatAlt2,
@@ -25,7 +24,7 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
               High Experience
             </span>{' '}
-            Lecturer
+            Tutors
           </h2>
           <p className="text-gray-600 mt-4 mb-8">
             Simple & and straightforward teaching based on what really matter

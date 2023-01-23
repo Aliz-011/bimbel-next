@@ -15,7 +15,9 @@ const Footer = () => {
     <footer className="py-4 lg:pt-12 px-4 lg:px-16 bg-slate-50">
       <div className="px-2 lg:px-4 py-2.5 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
         <div className="flex flex-col gap-4">
-          <h2 className="font-semibold text-2xl text-slate-900">Logo</h2>
+          <picture>
+            <img src="/logo.png" alt="logo" className="h-32 mr-3 sm:h-32" />
+          </picture>
           <p className="text-gray-500 text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
             voluptatem temporibus libero.
@@ -83,17 +85,17 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-4">
             <AiOutlinePhone className="w-5 h-5" />
-            <a href="tel:082197829187" className="text-gray-500 text-sm">
-              +6282197829187
+            <a href="tel:08967 5573200" className="text-gray-500 text-sm">
+              +628 967 5573200
             </a>
           </div>
           <div className="flex items-center gap-4">
             <AiOutlineMail className="w-5 h-5" />
             <a
-              href="mailto:mchdarmawan@gmail.com"
+              href="mailto:ilearnacademy22@gmail.com"
               className="text-gray-500 text-sm"
             >
-              youremail@gmail.com
+              ilearnacademy22@gmail.com
             </a>
           </div>
         </div>

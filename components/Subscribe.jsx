@@ -8,8 +8,8 @@ const Subscribe = () => {
   });
 
   return (
-    <section className="w-full" id="contact">
-      <div className="mx-auto bg-slate-900 px-5 py-10 col-span-2">
+    <section className="w-full " id="contact">
+      <div className="mx-auto bg-slate-900 py-8 sm:py-12 px-4 sm:px-16 col-span-2">
         <div className="grid gap-5 md:grid-cols-2 md:gap-10 lg:gap-20 ">
           <div className="flex justify-center md:justify-end">
             <img

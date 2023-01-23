@@ -45,20 +45,20 @@ export default function Home({ kursus }) {
                 Learn Anything
               </p>
               <h2 className="text-3xl sm:text-4xl font-semibold leading-tight sm:leading-snug ">
-                Benefits about Learning Expertise
+                Benefits about{' '}
+                <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+                  @ilearnacademy
+                </span>
               </h2>
             </div>
-            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5 border-l-4 border-green-400">
-              <HiOutlineLightBulb className="w-12 h-12 text-black" />
+            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex flex-col sm:flex-row items-center gap-5 border-l-4 border-green-400">
+              <HiOutlineLightBulb className="w-10 h-10 text-black" />
               <div>
-                <h2 className="font-semibold text-xl">Online Courses</h2>
-                <p className="text-gray-600 my-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cupiditate, eveniet nihil nemo corrupti consequatur quo! most.
-                </p>
+                <h2 className="font-semibold text-xl">Tutoring Services</h2>
+                <p className="text-gray-600 my-4">All you can learn</p>
               </div>
             </div>
-            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5 border-l-4 border-green-400">
+            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex flex-col sm:flex-row items-center gap-5 border-l-4 border-green-400">
               <GrUserManager className="w-10 h-10 text-black" />
               <div>
                 <h2 className="font-semibold text-xl">Learn With Expert</h2>
@@ -68,7 +68,7 @@ export default function Home({ kursus }) {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex items-center gap-5 border-l-4 border-green-400">
+            <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex flex-col sm:flex-row items-center gap-5 border-l-4 border-green-400">
               <GrCalendar className="w-10 h-10 text-black" />
               <div>
                 <h2 className="font-semibold text-xl">Earn a Certificate</h2>
@@ -95,7 +95,7 @@ Home.getLayout = function getLayout(page) {
 };
 
 export async function getStaticProps() {
-  let { data, error } = await supabase.from('kursus').select('*');
+  let { data, error } = await supabase.from('kursus').select('*').range(0, 5);
 
   if (!data) {
     return {
