@@ -52,29 +52,27 @@ export default function Home({ kursus }) {
               </h2>
             </div>
             <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex flex-col sm:flex-row items-center gap-5 border-l-4 border-green-400">
-              <HiOutlineLightBulb className="w-10 h-10 text-black" />
+              <HiOutlineLightBulb className="w-8 h-8 text-black" />
               <div>
                 <h2 className="font-semibold text-xl">Tutoring Services</h2>
                 <p className="text-gray-600 my-4">All you can learn</p>
               </div>
             </div>
             <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex flex-col sm:flex-row items-center gap-5 border-l-4 border-green-400">
-              <GrUserManager className="w-10 h-10 text-black" />
+              <GrUserManager className="w-6 h-6 text-black" />
               <div>
                 <h2 className="font-semibold text-xl">Learn With Expert</h2>
                 <p className="text-gray-600 my-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cupiditate, eveniet nihil nemo corrupti consequatur quo! most.
+                  Learning Through Online, Onsite, Home visit
                 </p>
               </div>
             </div>
             <div className="rounded-lg p-5 cursor-default bg-[rgba(255,255,255,0.9)] shadow backdrop-blur-sm flex flex-col sm:flex-row items-center gap-5 border-l-4 border-green-400">
-              <GrCalendar className="w-10 h-10 text-black" />
+              <GrCalendar className="w-6 h-6 text-black" />
               <div>
                 <h2 className="font-semibold text-xl">Earn a Certificate</h2>
                 <p className="text-gray-600 my-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cupiditate, eveniet nihil nemo corrupti consequatur quo! most.
+                  Certificate can prepare you to advanced in your career.
                 </p>
               </div>
             </div>

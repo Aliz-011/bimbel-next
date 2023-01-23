@@ -20,9 +20,13 @@ const Hero = () => {
           }}
         >
           <h2 className="text-5xl sm:text-6xl font-bold leading-tight sm:leading-snug">
-            Study At Home With
+            Study At
             <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
-              High Experience
+              iLearnAcademy
+            </span>
+            With High
+            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+              Experience
             </span>{' '}
             Tutors
           </h2>

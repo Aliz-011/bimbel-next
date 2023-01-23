@@ -20,7 +20,7 @@ export default function Header() {
             href="/"
             className="flex items-center justify-center relative"
           >
-            <span class="text-xl font-semibold whitespace-nowrap">
+            <span className="text-xl font-semibold whitespace-nowrap">
               iLearnAcademy
             </span>
           </motion.a>

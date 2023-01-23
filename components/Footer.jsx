@@ -19,8 +19,7 @@ const Footer = () => {
             <img src="/logo.png" alt="logo" className="h-32 mr-3 sm:h-32" />
           </picture>
           <p className="text-gray-500 text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            voluptatem temporibus libero.
+            Gain your knowledges and upgrade your skills with iLearnAcademy
           </p>
           <div className="flex items-center gap-2">
             <AiOutlineInstagram />

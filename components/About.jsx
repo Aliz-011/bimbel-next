@@ -32,9 +32,7 @@ const About = () => {
             }}
             className="text-gray-400"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
-            debitis suscipit maxime aut voluptas eligendi quibusdam dolor quas,
-            quo deserunt, unde at voluptatibus. Ea, modi?
+            All you can learn faster, better and easier to upgrade your skills
           </motion.p>
         </div>
       </div>
